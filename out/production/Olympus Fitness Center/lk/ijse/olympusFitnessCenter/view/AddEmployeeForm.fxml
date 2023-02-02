@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="408.0" style="-fx-background-color: #3D3D3D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.olympusFitnessCenter.controller.AddEmployeeFormController">
+   <children>
+      <TextField fx:id="txtName" layoutX="153.0" layoutY="83.0" prefHeight="31.0" prefWidth="200.0" promptText="name" />
+      <Label layoutX="39.0" layoutY="85.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="153.0" layoutY="135.0" prefHeight="31.0" prefWidth="200.0" promptText="contact no." />
+      <Label layoutX="39.0" layoutY="137.0" text="Contact No." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="153.0" layoutY="186.0" prefHeight="31.0" prefWidth="200.0" promptText="address" />
+      <Label layoutX="39.0" layoutY="188.0" text="Address" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="238.0" text="Salary" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNIC" layoutX="153.0" layoutY="283.0" prefHeight="31.0" prefWidth="200.0" promptText="national identity card" />
+      <Label layoutX="39.0" layoutY="285.0" text="N.I.C." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="335.0" text="Join Date" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="152.0" layoutY="34.0" prefHeight="31.0" prefWidth="200.0" promptText="id" />
+      <Label layoutX="38.0" layoutY="36.0" text="Employee ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" layoutX="195.0" layoutY="432.0" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #edd882; -fx-background-radius: 8;" text="     Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="205.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons/add-user-3-128.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="dpJoinDate" layoutX="153.0" layoutY="331.0" prefHeight="31.0" prefWidth="200.0" promptText="mm/dd/yyyy" />
+      <Label layoutX="153.0" layoutY="63.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="114.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="166.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="312.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSalary" layoutX="153.0" layoutY="234.0" prefHeight="31.0" prefWidth="200.0" promptText="address" />
+      <Label layoutX="39.0" layoutY="382.0" text="Job Role" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbJobRole" layoutX="152.0" layoutY="380.0" prefHeight="31.0" prefWidth="200.0" promptText="select" />
+      <JFXButton fx:id="btnClose" layoutX="349.0" layoutY="2.0" onAction="#btnCloseOnAction" prefHeight="40.0" prefWidth="23.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons/close-window-128.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

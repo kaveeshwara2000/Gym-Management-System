@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="501.0" prefWidth="411.0" style="-fx-background-color: #3D3D3D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.olympusFitnessCenter.controller.UpdateMemberFormController">
+    <children>
+        <TextField fx:id="txtName" layoutX="143.0" layoutY="73.0" prefHeight="31.0" prefWidth="200.0" promptText="name" />
+        <Label layoutX="29.0" layoutY="75.0" text="Name" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtContact" layoutX="143.0" layoutY="125.0" prefHeight="31.0" prefWidth="200.0" promptText="contact no." />
+        <Label layoutX="29.0" layoutY="127.0" text="Contact No." textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddress" layoutX="143.0" layoutY="176.0" prefHeight="31.0" prefWidth="200.0" promptText="address" />
+        <Label layoutX="29.0" layoutY="178.0" text="Address" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="29.0" layoutY="228.0" text="Date Of Birth" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNIC" layoutX="143.0" layoutY="273.0" prefHeight="31.0" prefWidth="200.0" promptText="national identity card" />
+        <Label layoutX="29.0" layoutY="275.0" text="N.I.C." textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="29.0" layoutY="325.0" text="Join Date" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="dpDOB" layoutX="142.0" layoutY="226.0" prefHeight="31.0" prefWidth="200.0" promptText="mm/dd/yyyy" />
+        <TextField fx:id="txtId" layoutX="142.0" layoutY="24.0" prefHeight="31.0" prefWidth="200.0" promptText="id" />
+        <Label layoutX="28.0" layoutY="26.0" text="Member ID" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnUpdate" layoutX="179.0" layoutY="423.0" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #edd882; -fx-background-radius: 8;" text="Update">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/icons/add-user-3-128.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <DatePicker fx:id="dpJoinDate" layoutX="143.0" layoutY="321.0" prefHeight="31.0" prefWidth="200.0" promptText="mm/dd/yyyy" />
+        <Label layoutX="143.0" layoutY="53.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="143.0" layoutY="104.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="143.0" layoutY="156.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="143.0" layoutY="302.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnClose" layoutX="347.0" layoutY="2.0" onAction="#btnCloseOnAction" prefHeight="40.0" prefWidth="23.0" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/icons/close-window-128.png" />
+                    </image>
+                    <viewport>
+                        <Rectangle2D />
+                    </viewport>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <Label layoutX="29.0" layoutY="371.0" text="Gender" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXRadioButton fx:id="rbMale" layoutX="144.0" layoutY="371.0" selected="true" style="-jfx-unselected-color: white; -jfx-selected-color: #fac900; -fx-font-size: 18;" text="Male" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="Gender" />
+            </toggleGroup>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="rbFemale" layoutX="253.0" layoutY="372.0" style="-jfx-unselected-color: white; -jfx-selected-color: #fac900; -fx-font-size: 18;" text="Female" textFill="WHITE" toggleGroup="$Gender">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXRadioButton>
+    </children>
+</AnchorPane>

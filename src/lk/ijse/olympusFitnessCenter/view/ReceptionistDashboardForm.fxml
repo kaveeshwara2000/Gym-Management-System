@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1040.0" prefWidth="1921.0" style="-fx-background-color: black;" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.olympusFitnessCenter.controller.ReceptionistDashboardFormController">
+    <children>
+        <BorderPane fx:id="fullPane" layoutX="1.0" prefHeight="800.0" prefWidth="1143.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <AnchorPane prefHeight="518.0" prefWidth="190.0" style="-fx-background-color: black;">
+                    <children>
+                        <VBox layoutY="24.0" prefHeight="566.0" prefWidth="190.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+                            <children>
+                                <JFXButton fx:id="btnMembers" alignment="BASELINE_LEFT" onAction="#btnMembersOnAction" prefHeight="65.0" prefWidth="240.0" styleClass="sidebarItem" text="Members" textFill="#fac900">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assests/icons/guest-128.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="btnTrainers" alignment="BASELINE_LEFT" onAction="#btnTrainersOnAction" prefHeight="65.0" prefWidth="240.0" styleClass="sidebarItem" text="Trainers" textFill="#fac900">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assests/icons/collaborator-128.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="btnSuppliers" alignment="BASELINE_LEFT" onAction="#btnSuppliersOnAction" prefHeight="65.0" prefWidth="240.0" styleClass="sidebarItem" text="Suppliers" textFill="#fac900">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assests/icons/group-128.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="btnStock" alignment="BASELINE_LEFT" onAction="#btnStockOnAction" prefHeight="65.0" prefWidth="240.0" styleClass="sidebarItem" text="Stock" textFill="#fac900">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assests/icons/factory-128.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="btnSales" alignment="BASELINE_LEFT" onAction="#btnSalesOnAction" prefHeight="65.0" prefWidth="240.0" styleClass="sidebarItem" text="Sales" textFill="#fac900">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assests/icons/cart-6-128.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+            <bottom>
+                <AnchorPane prefHeight="95.0" prefWidth="1143.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="lblCurrentDate" layoutX="1639.0" layoutY="17.0" prefHeight="40.0" prefWidth="215.0" textFill="#fac900">
+                            <font>
+                                <Font name="System Bold" size="28.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </bottom>
+            <center>
+                <AnchorPane fx:id="centerPane" prefHeight="830.0" prefWidth="1660.0" style="-fx-background-color: #8f8f8f;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane layoutX="249.0" layoutY="197.0" prefHeight="234.0" prefWidth="264.0" style="-fx-background-color: grey; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #edd882;">
+                            <children>
+                                <Label fx:id="lblMembers" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="27.0" prefHeight="128.0" prefWidth="174.0" text="2" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="72.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="52.0" layoutY="152.0" text="Members" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="708.0" layoutY="201.0" prefHeight="234.0" prefWidth="264.0" style="-fx-background-color: grey; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #edd882;">
+                            <children>
+                                <Label fx:id="lblEmployees" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="27.0" prefHeight="128.0" prefWidth="174.0" text="3" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="72.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="47.0" layoutY="152.0" text="Employees" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                  <Pane layoutX="1133.0" layoutY="201.0" prefHeight="234.0" prefWidth="264.0" style="-fx-background-color: grey; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #edd882;">
+                     <children>
+                        <Label fx:id="lblTrainers" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="27.0" prefHeight="128.0" prefWidth="174.0" text="2" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="72.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="61.0" layoutY="152.0" text="Trainers" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                    </children></AnchorPane>
+            </center>
+            <right>
+                <AnchorPane prefHeight="830.0" prefWidth="68.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER" />
+            </right>
+            <top>
+                <AnchorPane prefHeight="115.0" prefWidth="1209.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="99.0" fitWidth="124.0" layoutX="41.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assests/logo/logo.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="lblName" layoutX="810.0" layoutY="2.0" prefHeight="51.0" prefWidth="162.0" textFill="#fac900" AnchorPane.rightAnchor="171.0">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="53.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assests/icons/administrator-128.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <JFXButton fx:id="btnLogout" layoutX="846.0" layoutY="58.0" onAction="#btnLogoutClickOnAction" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #fac900; -fx-background-radius: 8;" text="Log Out" AnchorPane.rightAnchor="207.0">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assests/icons/logout-128.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+
+                        <JFXButton fx:id="btnClose" layoutX="1076.0" layoutY="3.0" onAction="#btnCloseOnAction" prefHeight="40.0" prefWidth="23.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="0.0">
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assests/icons/close-window-128.png" />
+                                    </image>
+                                    <viewport>
+                                        <Rectangle2D />
+                                    </viewport>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <Label layoutX="758.0" layoutY="26.0" text="Olympus Fitness Center" textFill="#fac900">
+                            <font>
+                                <Font name="Yu Gothic Bold" size="40.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

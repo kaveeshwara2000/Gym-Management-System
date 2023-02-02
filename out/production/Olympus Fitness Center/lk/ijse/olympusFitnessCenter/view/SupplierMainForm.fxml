@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="830.0" prefWidth="1660.0" style="-fx-background-color: #8f8f8f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.olympusFitnessCenter.controller.SupplierFormController">
+    <children>
+        <Label layoutX="130.0" layoutY="56.0" text="Supplier Id" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnAdd" layoutX="499.0" layoutY="55.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #edd882; -fx-background-radius: 8;" text="Add">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/icons/add-user-3-128.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <TableView fx:id="tblEmployee" editable="true" layoutX="109.0" layoutY="196.0" prefHeight="173.0" prefWidth="973.0">
+            <columns>
+                <TableColumn fx:id="colName" prefWidth="214.33334350585938" text="Name" />
+                <TableColumn fx:id="colContact" prefWidth="170.0" text="Contact No." />
+                <TableColumn fx:id="colNic" prefWidth="157.0" text="NIC" />
+                <TableColumn fx:id="colAddress" prefWidth="202.66668701171875" text="Address" />
+                <TableColumn fx:id="colUpdate" minWidth="9.0" prefWidth="110.0" />
+                <TableColumn fx:id="colRemove" minWidth="9.0" prefWidth="110.0" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tblAttendance" layoutX="137.0" layoutY="469.0" prefHeight="198.0" prefWidth="360.0">
+            <columns>
+                <TableColumn fx:id="colDate" prefWidth="172.666748046875" text="Item Code" />
+                <TableColumn fx:id="colTime" prefWidth="183.333251953125" text="Quantity" />
+            </columns>
+        </TableView>
+        <Label layoutX="300.0" layoutY="422.0" text="Stock" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnMark" layoutX="241.0" layoutY="689.0" onAction="#btnMarkOnAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: pink; -fx-background-radius: 8;" text="Add to Stock">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXButton>
+        <ComboBox fx:id="cmbId" layoutX="282.0" layoutY="54.0" onAction="#cmbIdOnAction" prefHeight="40.0" prefWidth="174.0" />
+        <JFXTextField fx:id="txtId" focusColor="#fac900" layoutX="282.0" layoutY="55.0" onAction="#txtIdOnAction" onKeyReleased="#txtIdKeyReleased" prefHeight="40.0" prefWidth="142.0" promptText="select id" style="-fx-background-color: white;" unFocusColor="#ffffff00">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="btnReload" layoutX="108.0" layoutY="151.0" onAction="#btnReloadOnAction" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #edd882; -fx-background-radius: 8;" text="Reload">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="lblMemberID" layoutX="282.0" layoutY="99.0" style="visibility: false;" text="*invalid Id" textFill="RED">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

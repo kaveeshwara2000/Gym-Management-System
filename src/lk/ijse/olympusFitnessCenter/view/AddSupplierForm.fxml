@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="331.0" prefWidth="390.0" style="-fx-background-color: #3D3D3D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.olympusFitnessCenter.controller.AddSupplierFormController">
+    <children>
+        <TextField fx:id="txtSupName" layoutX="161.0" layoutY="93.0" prefHeight="31.0" prefWidth="200.0" promptText="name" />
+        <Label layoutX="47.0" layoutY="95.0" text="Name" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSupContact" layoutX="161.0" layoutY="145.0" prefHeight="31.0" prefWidth="200.0" promptText="contact no." />
+        <Label layoutX="47.0" layoutY="147.0" text="Contact No." textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSupCategory" layoutX="161.0" layoutY="196.0" prefHeight="31.0" prefWidth="200.0" promptText="category" />
+        <Label layoutX="47.0" layoutY="198.0" text="Category" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSupId" layoutX="160.0" layoutY="44.0" prefHeight="31.0" prefWidth="200.0" promptText="id" />
+        <Label layoutX="46.0" layoutY="46.0" text="Supplier Id" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnAdd" layoutX="210.0" layoutY="263.0" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #edd882; -fx-background-radius: 8;" text="     Add">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="lblSupId" layoutX="161.0" layoutY="73.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblSupName" layoutX="161.0" layoutY="124.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblSupContact" layoutX="161.0" layoutY="176.0" style="visibility: false;" text="*invalid format" textFill="#edd882">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="222.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assests/icons/add-user-3-128.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
